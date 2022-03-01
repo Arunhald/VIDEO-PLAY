@@ -13,8 +13,8 @@ async def start_bot():
     await user.join_chat("VeezSupportGroup")
     await user.join_chat("levinachannel")
     await idle()
-    LOGS.info("[INFO]: BOT & USERBOT STOPPED !!")
+    LOGS.info("[INFO]: BOT & USERBOT CLIENT STOPPED !!")
     await bot.stop()
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(start_bot())
+
+asyncio.run(start_bot())
